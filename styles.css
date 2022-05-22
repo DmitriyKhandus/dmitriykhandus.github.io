@@ -1,0 +1,548 @@
+/* Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*-------------------- */
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url("./fonts/Jost-Light.ttf");
+ }
+
+ @font-face {
+  font-family: "RobotoRegular";
+  src: url("./fonts/Jost-Medium.ttf");
+ }
+
+ @font-face {
+  font-family: "RobotoBold";
+  src: url("./fonts/Jost-Bold.ttf");
+ }
+ @font-face {
+  font-family: "ExtraRobotoBold";
+  src: url("./fonts/Jost-ExtraBold.ttf");
+ }
+
+body {
+  font-family: "RobotoRegular";
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hi {
+  font-family: "RobotoBold";
+  font-weight: 500;
+  display: flex;
+  flex: 1 1 auto;
+  background-color: #262f35;  
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  margin: 0px auto;
+}
+.hi__row {
+  height: 85px;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding: 0 30px;
+  text-align: center;
+  
+}
+.hi__left {
+  color: white;
+  width: 15%;
+}
+
+.hi__left a {
+  color: white;
+  width: 15%;
+}
+
+.hi__center {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 70%;
+}
+
+.hi__center a{
+  color: white;
+}
+
+.about {
+  color: white;
+  margin: 0 20px;
+}
+.hi__right {
+  color: white;
+  width: 15%;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+.footer {
+  background-color:#FFA97A;
+  display: flex;
+  flex-direction: column;
+}
+.footer_container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  color: #293241;
+  padding: 40px;
+}
+.footer__bolttext {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.footer__ordinarytext {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 30px 0px;
+}
+
+.footer__ordinarytext a{
+  color: #293241;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.footer__icons svg{
+  width: 40px;
+  height: 40px;
+  fill: #293241;
+}
+
+.body{
+  background-color:#161c27;
+  padding-bottom: 70px;
+}
+
+.body-container {
+  flex-direction: column;
+  align-items:center;
+}
+.myimg {
+  border-radius: 20px;
+  opacity: 0.8;
+  margin: 0 auto;
+  margin-top: 20px;
+  clip-path: circle(50%)
+}
+.im {
+  font-family: "RobotoLight";
+  font-size: 17px;
+  color: white;
+}
+.fullname {
+  font-size: 32px;
+  font-family: "ExtraRobotoBold" ;
+  color: white;
+}
+.spec {
+  font-family: "RobotoLight";
+  font-size: 14px;
+  color: #FFA97A;
+}
+.aboutbuttons {
+  font-family: "RobotoRegular";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px !important;
+}
+
+.aboutbuttons button {
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #FFA97A;
+  color: #293241;
+  width: 200px;
+  height: 51px;
+  text-align: 51px;
+}
+
+.aboutbuttons button:focus {
+  background-color: #ffa87ad2;
+  color: white;
+}
+
+.aboutme {
+  margin-left: 20px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.about-left {
+  width: 40%;
+}
+.about-right {
+display:flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+}
+
+.about-my-skills{
+  font-size: 30px;
+  margin-top: 70px;
+  color:#FFA97A;
+  font-family: "RobotoRegular";
+  font-weight: 600;
+  filter: drop-shadow(0px 0px 17px #ffa87ac0);
+}
+.aboutjs {
+  padding-top: 30px;
+  padding-left: 15px;
+  color:#FFA97A;
+  line-height: 20px;
+  font-size: 16px;
+  width: 75%;
+  font-family: "RobotoLight";
+}
+
+.about-me {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  width: 350px;
+}
+
+.about-me div, img {
+  margin-top: 20px;
+}
+.contact{
+  height: 51px;
+  width: 145px;
+  font-family: "RobotoRegular";
+  margin-top: 55px;
+  color: #293241;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #FFA97A;
+}
+
+.skill {
+  background-color: #fff;
+  height: 5px;
+  width: 300px;
+  position: relative;
+}
+
+.skill::after {
+  content: '';
+  position: absolute;
+  background-color: green;
+  height: 5px;
+  width: 75%;
+  top: 0;
+  left: 0;
+}
+
+.skills-table {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__info span {
+  display: block;
+  text-align: center;
+}
+
+.skills__title {
+  font-weight: 800;
+  font-size: 30px;
+  color: #FFA97A;
+  filter: drop-shadow(0px 0px 17px #ffa87ac0);
+}
+
+.skills__pretitle {
+  font-weight: 800;
+  font-size: 15px;
+  color: #767676;
+  margin-top: 10px;
+}
+
+.skills-graph {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  column-gap: 80px;
+}
+
+.skills__block{
+  width: 300px;
+  background-color: #182228;
+  padding: 22px 30px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.skills-graph__info span:first-child {
+  font-size: 17px;
+  line-height: 20px;
+  display: block;
+}
+
+.skills-graph__info span:last-child {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.skills-graph__exp {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-graph__stek {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-graph__line {
+  width: 240px;
+  height: 3px;
+  margin-top: 10px;
+  border-radius: 1.5px;
+  background: rgba(255, 169, 122, 0.5);
+  box-shadow: 0px 0px 5px rgba(255, 169, 122, 0.5);
+  position: relative;
+  z-index: 0;
+}
+
+.skills-graph__line[data-per="30%"]::after {
+  content: '';
+  background-color: #FFA97A;
+  box-shadow: 0px 0px 5px #FFA97A;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 30%;
+}
+
+.skills-graph__line[data-per="50%"]::after {
+  content: '';
+  background-color: #FFA97A;
+  box-shadow: 0px 0px 5px #FFA97A;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 50%;
+}
+
+.skills-graph__line[data-per="55%"]::after {
+  content: '';
+  background-color: #FFA97A;
+  box-shadow: 0px 0px 5px #FFA97A;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 55%;
+}
+
+.skills-graph__line[data-per="60%"]::after {
+  content: '';
+  background-color: #FFA97A;
+  box-shadow: 0px 0px 5px #FFA97A;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 60%;
+}
+
+.skills-graph__line[data-per="65%"]::after {
+  content: '';
+  background-color: #FFA97A;
+  box-shadow: 0px 0px 5px #FFA97A;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 65%;
+}
+
+.skills-graph__line[data-per="70%"]::after {
+  content: '';
+  background-color: #FFA97A;
+  box-shadow: 0px 0px 5px #FFA97A;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 70%;
+}
+
+.skills-graph__line[data-per="75%"]::after {
+  content: '';
+  background-color: #FFA97A;
+  box-shadow: 0px 0px 5px #FFA97A;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 75%;
+}
+
+.skills-graph__line[data-per="80%"]::after {
+  content: '';
+  background-color: #FFA97A;
+  box-shadow: 0px 0px 5px #FFA97A;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 80%;
+}
+
+.skills-graph__line[data-per="85%"]::after {
+  content: '';
+  background-color: #FFA97A;
+  box-shadow: 0px 0px 5px #FFA97A;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 85%;
+}
+
+.skills-graph__line[data-per="90%"]::after {
+  content: '';
+  background-color: #FFA97A;
+  box-shadow: 0px 0px 5px #FFA97A;
+  border-radius: 1.5px;
+  position: absolute;
+  z-index: 10;
+  height: 3px;
+  width: 90%;
+}
+
+.skills-graph .services-table__title>span {
+  font-size: 17px;
+  line-height: 20px;
+  display: block;
+  position: relative;
+  padding-left: 25px;
+}
+
+.services-table__title>span:before {
+  content: '';
+  background-image: url('./icons/Approve.png');
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+}
+.services-table__info {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #8B8B8B;
+}
+
+.services-table button {
+  margin-top: 30px;
+  margin-left: 110px;
+  font-size: 17px;
+  line-height: 32px;
+  color: #FFFFFF;
+  border: 1px solid #FFA97A;
+  padding: 2px 20px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 17px #FFA97A);
+  background: none;
+}
+
+.footer__created-by {
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.skills-table .portfolio__title span{
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.portfolio__img img{
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.portfolio button {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 32px;
+  color: #FFFFFF;
+  border: 1px solid #FFA97A;
+  padding: 2px 20px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 17px #FFA97A);
+  background: none;
+}
+
+.contacts .contacts__icons {
+  width: 500px;
+  margin-top: 50px;
+}
+
+.contacts .contacts__icons a{
+  width: 100px;
+  height: 100px;
+  padding: 30px;
+  background-color: #182228;
+  border-radius: 20px;
+}
+
+.contacts .contacts__icons a>svg {
+  fill: #FFA97A;
+}
